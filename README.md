@@ -26,8 +26,8 @@ Users should be able to:
 ![](./screenshot.jpg)
 
 ### it's mine
-![](./design/Captura web_12-10-2021_173023_.jpeg)
-![](./design/Captura web_12-10-2021_173116_.jpeg)
+![](./design/web_12-10-2021_173023_.jpeg)
+![](./design/web_12-10-2021_173116_.jpeg)
 
 ### Links
 
