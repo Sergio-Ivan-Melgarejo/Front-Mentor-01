@@ -1,0 +1,145 @@
+:root{
+    --ModerateViolet: hsl(263, 55%, 52%);;
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryFarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+}
+Body{
+    Font-size: 13px;
+    background: var(--LightGrayishBlue);
+    color: var(--LightGray);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px;
+}
+.container{
+    min-width: 330px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+.card__img{
+    width: 2.2em;
+    border-radius: 50%;
+    border: 2px solid var(--LightGray);
+}
+.card__container{
+    display: inline-block;
+    margin: 0 15px 12px;
+    position: relative;
+    top: -5px;
+}
+.cards{
+    padding: 27px 38px;
+    border-radius: 10px;
+}
+.card__name{
+    font-weight: 500;
+    color: var(--White);
+    opacity: .9;
+    font-size: 1em;
+}
+.card__Verified{
+    font-size: .9em;
+    opacity: 50%;
+}
+.card__sub-title{
+    color: var(--White);
+    font-size: 1.5em;
+}
+.card__p{
+    opacity: .7;
+    line-height: 1.5em;
+    padding: 20px 0 10px;
+    font-weight: lighter;
+    font-stretch: ultra-expanded;
+    font-size: 1em;
+}
+
+.card-1{
+    background: url(images/bg-pattern-quotation.svg), linear-gradient(60deg, hsla(263, 55%, 52%, 0.932), hsl(263, 55%, 52%) 100%);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    position: relative;  
+}
+.card-2{
+    background: var(--VeryDarkGrayishBlue);
+}
+.card-3, .card-5{
+    background: var(--White);
+}
+.card-4{
+    background: var(--VeryFarkBlackishBlue);
+}
+.card__sub-title-2{
+    color: var(--VeryFarkBlackishBlue);
+    opacity: .8;
+}
+.card__p-2{
+    color: var(--VeryFarkBlackishBlue);
+    opacity: .7;
+}
+.card__name-2{
+    color: var(--VeryFarkBlackishBlue);
+}
+.card__verified-2{
+    color: var(--VeryFarkBlackishBlue);
+}
+
+/* front mentor and me*/
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    padding: 20px;
+    color: #000;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* tablet*/
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    .container{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+    .card-1{
+        grid-area: 1/1/2/3;
+    }
+    .card-5{
+        grid-area: 4/1/5/3;
+    }
+    .card-4{
+        grid-area: 3/1/4/3;
+    }
+}
+
+/* desk */
+@media screen and (min-width: 1201px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card-1{
+        grid-area: 1/1/2/3;
+    }
+    .card-2{
+        grid-area: 1/3/2/4;
+    }
+    .card-3{
+        grid-area: 2/1/3/2;
+    }
+    .card-4{
+        grid-area: 2/2/3/4;
+    }
+    .card-5{
+        grid-area: 1/4/3/5;
+    }
+}
