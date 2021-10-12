@@ -17,13 +17,12 @@ Body{
     padding: 10px;
 }
 .container{
-    min-width: 330px;
+    min-width: 350px;
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
 }
 .card__img{
     width: 2.2em;
@@ -97,11 +96,23 @@ Body{
 .attribution { 
     font-size: 11px;
     text-align: center; 
-    padding: 20px;
+    padding: 30px;
     color: #000;
+    position: fixed;
+    opacity: .2;
+    top: 20px;
+    right: 20px;
+    background: var(--LightGrayishBlue) ;
+    border-radius: 5px;
+}
+.attribution:hover{
+    opacity: .9;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover { 
+    color: var(--ModerateViolet); 
 }
 
 /* tablet*/
@@ -123,6 +134,11 @@ Body{
 
 /* desk */
 @media screen and (min-width: 1201px){
+    body{
+        display: flex;
+        place-content: center;
+        height: 100vh;
+    }
     .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
