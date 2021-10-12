@@ -19,7 +19,6 @@ Body{
 .container{
     min-width: 350px;
     max-width: 1400px;
-    margin: 0 auto;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
@@ -136,7 +135,8 @@ Body{
 @media screen and (min-width: 1201px){
     body{
         display: flex;
-        place-content: center;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
     }
     .container{
