@@ -23,19 +23,16 @@ Users should be able to:
 ### Screenshot
 
 ### The challenge
-![](./screenshot.jpg)
+![](./design/desktop-preview.jpg)
 
 ### it's mine
-![](./design/web_12-10-2021_173023_.jpeg)
-![](./design/web_12-10-2021_173116_.jpeg)
+![](./design/Captura web_12-10-2021_173023_.jpeg)
+![](./design/Captura web_12-10-2021_173116_.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-
 - Live Site URL: [Add live site URL here](https://sergio-ivan-melgarejo.github.io/Front-Mentor-01/)
 
-- Live Site URL: [https://sergio-ivan-melgarejo.github.io/Front-Mentor-01/](https://your-live-site-url.com)
 
 ## My process
 
